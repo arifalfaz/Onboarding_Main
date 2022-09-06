@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("IntroSlider", Context.MODE_PRIVATE);
         if (!sharedPreferences.getBoolean(pref_show_intro,true)){
             Intent i = new Intent(MainActivity.this, mainscreen.class);
+            // Show The Tost here
             startActivity(i);
         }
 
@@ -135,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
 
                 backbtn.setVisibility(View.INVISIBLE);
+                //Show Visibility Tost
 
             }
 
